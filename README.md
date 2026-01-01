@@ -1,0 +1,2 @@
+# FUSDT
+FlashTether USDT Token
