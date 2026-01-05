@@ -220,4 +220,106 @@ main();
 
 ---
 
+## tron-deploy.js (TRON)
+
+const FUSDT = artifacts.require("FUSDT_TRON");
+
+module.exports = function (deployer) {
+  const multisig = process.env.MULTISIG;
+  deployer.deploy(FUSDT, multisig);
+};
+
+---
+
+### tron-verify.js
+
+console.log("TRON verification is manual via TRONSCAN.");
+
+---
+
+
+
+### test.md
+
+# FUSDT – Test Plan
+
+This document outlines the full test suite required to validate the FUSDT smart contracts on both EVM and TRON networks.
+
+---
+
+## 1. Unit Tests
+
+### ERC20 / TRC20 Core
+- Transfer  
+- Approval  
+- Allowance  
+- Balance updates  
+- Event emission  
+
+### Mint/Burn
+- Only multisig can mint  
+- Only multisig can burn  
+- Supply updates correctly  
+- Events emitted  
+
+### Pause/Unpause
+- Only multisig can pause  
+- Transfers blocked when paused  
+- Mint/Burn blocked when paused  
+
+---
+
+## 2. Access Control Tests
+- Unauthorized mint attempt  
+- Unauthorized burn attempt  
+- Unauthorized pause attempt  
+- Unauthorized ownership transfer  
+
+---
+
+## 3. Deployment Tests
+- Contract deploys successfully  
+- Owner is correctly set  
+- Multisig is correctly assigned  
+- Initial state is correct  
+
+---
+
+## 4. Edge Case Tests
+- Mint to zero address  
+- Burn from zero address  
+- Transfer to zero address  
+- Overflow/underflow attempts  
+
+---
+
+## 5. Gas Optimization Tests
+- Transfer gas usage  
+- Mint/Burn gas usage  
+- Pause/Unpause gas usage  
+
+---
+
+## 6. TRON‑Specific Tests
+- TRC20 event compatibility  
+- TRON address format validation  
+- TRON multisig integration  
+
+---
+
+## 7. Test Commands
+
+### EVM
+
+npx hardhat test
+
+
+### TRON
+
+
+---
+
+## 8. Conclusion
+This test suite ensures FUSDT is secure, stable, and ready for audit, exchange integration, and production deployment.
+
 
