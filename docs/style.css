@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0A0F1F;
+  color: #E6F1FF;
+}
+
+a {
+  color: #00E0FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0A0F1F;
+  padding: 12px 24px;
+  border-bottom: 2px solid #00E0FF;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  height: 32px;
+}
+
+.nav-logo span {
+  font-weight: 700;
+  color: #00E0FF;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: #00E0FF;
+  font-weight: 600;
+}
+
+.nav-menu a:hover {
+  color: #FFFFFF;
+}
+
+.hero {
+  padding: 80px 24px 40px;
+  text-align: center;
+  background: radial-gradient(circle at top, #00E0FF22, #0A0F1F 60%);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #B8C7FF;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.hero-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-tags span {
+  border: 1px solid #00E0FF55;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #E6F1FF;
+}
+
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.section h2 {
+  border-left: 4px solid #00E0FF;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #111827;
+  border-radius: 8px;
+  padding: 16px 18px;
+  border: 1px solid #1F2937;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1A2333;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #7F8FB8;
+}
