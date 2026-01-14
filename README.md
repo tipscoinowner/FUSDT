@@ -1,7 +1,7 @@
 # FUSDT – Flush Tether USD Token  
 Institutional‑Grade, Audit‑Ready Stablecoin
 
-FUSD (Flush Tether USDF) is a fully reserved, multisig‑controlled stablecoin protocol operating on both EVM and TRON networks.  
+FUSDT (Flush Tether FUSDT) is a fully reserved, multisig‑controlled stablecoin protocol operating on both EVM and TRON networks.  
 It is designed for institutional trust, transparency, and long‑term stability.
 
 ---
